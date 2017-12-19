@@ -30,13 +30,36 @@ namespace SharpDoom
         {
             QLine res;
 
-            res.a.x = line.a.x * Sin(angle) - line.a.y * Cos(angle);
-            res.b.x = line.b.x * Sin(angle) - line.b.y * Cos(angle);
+            float psin = Sin(angle);
+            float pcos = Cos(angle);
 
-            res.a.y = line.a.x * Cos(angle) + line.a.y * Sin(angle);
-            res.b.y = line.b.x * Cos(angle) + line.b.y * Sin(angle);
+            res.a.x = line.a.x * psin - line.a.y * pcos;
+            res.b.x = line.b.x * psin - line.b.y * pcos;
+
+            res.a.y = line.a.x * pcos + line.a.y * psin;
+            res.b.y = line.b.x * pcos + line.b.y * psin;
 
             return res;
+        }
+
+        public static void ClipLine(ref QLine line)
+        {
+            QPoint vec = line.a - line.b;
+            const float y0 = 1e-4f;
+
+            if (line.a.y < 0)
+            {
+                line.a.y = y0;
+                line.a.x = line.b.x + vec.x * (y0 - line.b.y) / vec.y;
+
+                return;
+            }
+
+            if (line.b.y < 0)
+            {
+                line.b.y = y0;
+                line.b.x = line.a.x + vec.x * (y0 - line.a.y) / vec.y;
+            }
         }
 
         public static class Matrix
@@ -47,6 +70,4 @@ namespace SharpDoom
             }
         }
     }
-
-    
 }

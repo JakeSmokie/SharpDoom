@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,5 +26,14 @@ namespace SharpDoom
         }
         #endregion
 
+        public static float StrToFloat(string str)
+        {
+            return Convert.ToSingle(str, numberFormat);
+        }
+
+        public static NumberFormatInfo numberFormat = new NumberFormatInfo()
+        {
+            NumberDecimalSeparator = "."
+        };
     }
 }

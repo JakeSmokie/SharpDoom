@@ -49,4 +49,6 @@ namespace SharpDoom
         public Color clr;
         public QLine line;
     }
+
+    
 }

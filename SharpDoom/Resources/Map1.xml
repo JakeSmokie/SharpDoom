@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Level>
+  <Vertices>
+    <Vertex x = "0.0" y = "0.0"/>
+    <Vertex x = "6.0" y = "0.0"/>
+    <Vertex x = "28.0" y = "0.0"/>
+
+    <Vertex x = "1.0" y = "2.0"/>
+    <Vertex x = "17.5" y = "2.0"/>
+
+    <Vertex x = "4.0" y = "5.0"/>
+    <Vertex x = "6.0" y = "5.0"/>
+    <Vertex x = "18.0" y = "5.0"/>
+    <Vertex x = "21.0" y = "5.0"/>
+
+    <Vertex x = "9.0" y = "6.5"/>
+    <Vertex x = "11.0" y = "6.5"/>
+    <Vertex x = "13.0" y = "6.5"/>
+    <Vertex x = "13.5" y = "6.5"/>
+    <Vertex x = "17.5" y = "6.5"/>
+
+    <Vertex x = "5.0" y = "7.0"/>
+    <Vertex x = "7.0" y = "7.0"/>
+    <Vertex x = "8.0" y = "7.0"/>
+    <Vertex x = "9.0" y = "7.0"/>
+    <Vertex x = "11.0" y = "7.0"/>
+    <Vertex x = "13.0" y = "7.0"/>
+    <Vertex x = "13.5" y = "7.0"/>
+    <Vertex x = "15.0" y = "7.0"/>
+    <Vertex x = "17.0" y = "7.0"/>
+    <Vertex x = "19.0" y = "7.0"/>
+    <Vertex x = "21.0" y = "7.0"/>
+
+    <Vertex x = "4.0" y = "7.5"/>
+    <Vertex x = "6.0" y = "7.5"/>
+
+    <Vertex x = "4.0" y = "10.5"/>
+    <Vertex x = "6.0" y = "10.5"/>
+
+    <Vertex x = "5.0" y = "11.0"/>
+    <Vertex x = "7.0" y = "11.0"/>
+    <Vertex x = "8.0" y = "11.0"/>
+    <Vertex x = "9.0" y = "11.0"/>
+    <Vertex x = "11.0" y = "11.0"/>
+    <Vertex x = "13.0" y = "11.0"/>
+    <Vertex x = "13.5" y = "11.0"/>
+    <Vertex x = "15.0" y = "11.0"/>
+    <Vertex x = "17.0" y = "11.0"/>
+    <Vertex x = "19.0" y = "11.0"/>
+    <Vertex x = "21.0" y = "11.0"/>
+
+    <Vertex x = "9.0" y = "11.5"/>
+    <Vertex x = "11.0" y = "11.5"/>
+    <Vertex x = "13.0" y = "11.5"/>
+    <Vertex x = "13.5" y = "11.5"/>
+    <Vertex x = "17.5" y = "11.5"/>
+
+    <Vertex x = "4.0" y = "13.0"/>
+    <Vertex x = "6.0" y = "13.0"/>
+    <Vertex x = "18.0" y = "13.0"/>
+    <Vertex x = "21.0" y = "13.0"/>
+
+    <Vertex x = "1.0" y = "16.0"/>
+    <Vertex x = "17.5" y = "16.0"/>
+
+    <Vertex x = "0.0" y = "18.0"/>
+    <Vertex x = "6.0" y = "18.0"/>
+    <Vertex x = "28.0" y = "18.0"/>
+  </Vertices>
+  <Sections>
+    <Section numPoints="4" floor="0.000000" ceil="20.000000">
+      <Neighbors>
+        <Neighbor id="-1"/>
+        <Neighbor id="1"/>
+        <Neighbor id="11"/>
+        <Neighbor id="22"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="3"/>
+        <Vertex Id="14"/>
+        <Vertex Id="29"/>
+        <Vertex Id="49"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="5" floor="0.000000" ceil="20.000000">
+      <Neighbors>
+        <Neighbor id="-1"/>
+        <Neighbor id="12"/>
+        <Neighbor id="11"/>
+        <Neighbor id="0"/>
+        <Neighbor id="21"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="17"/>
+        <Vertex Id="15"/>
+        <Vertex Id="14"/>
+        <Vertex Id="3"/>
+        <Vertex Id="9"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="7" floor="0.000000" ceil="20.000000">
+      <Neighbors>
+        <Neighbor id="-1"/>
+        <Neighbor id="20"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="3"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="22"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="41"/>
+        <Vertex Id="42"/>
+        <Vertex Id="43"/>
+        <Vertex Id="44"/>
+        <Vertex Id="50"/>
+        <Vertex Id="49"/>
+        <Vertex Id="40"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="6" floor="0.000000" ceil="14.000000">
+      <Neighbors>
+        <Neighbor id="-1"/>
+        <Neighbor id="21"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="2"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="4"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="12"/>
+        <Vertex Id="13"/>
+        <Vertex Id="44"/>
+        <Vertex Id="43"/>
+        <Vertex Id="35"/>
+        <Vertex Id="20"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="0.000000" ceil="12.000000">
+      <Neighbors>
+        <Neighbor id="-1"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="3"/>
+        <Neighbor id="-1"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="16"/>
+        <Vertex Id="20"/>
+        <Vertex Id="35"/>
+        <Vertex Id="31"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="6" floor="16.000000" ceil="28.000000">
+      <Neighbors>
+        <Neighbor id="18"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="7"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="6"/>
+        <Neighbor id="-1"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="24"/>
+        <Vertex Id="8"/>
+        <Vertex Id="2"/>
+        <Vertex Id="53"/>
+        <Vertex Id="48"/>
+        <Vertex Id="39"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="5" floor="16.000000" ceil="28.000000">
+      <Neighbors>
+        <Neighbor id="5"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="8"/>
+        <Neighbor id="10"/>
+        <Neighbor id="-1"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="53"/>
+        <Vertex Id="52"/>
+        <Vertex Id="46"/>
+        <Vertex Id="47"/>
+        <Vertex Id="48"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="5" floor="16.000000" ceil="28.000000">
+      <Neighbors>
+        <Neighbor id="23"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="5"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="10"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="1"/>
+        <Vertex Id="2"/>
+        <Vertex Id="8"/>
+        <Vertex Id="7"/>
+        <Vertex Id="6"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="16.000000" ceil="36.000000">
+      <Neighbors>
+        <Neighbor id="-1"/>
+        <Neighbor id="6"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="24"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="46"/>
+        <Vertex Id="52"/>
+        <Vertex Id="51"/>
+        <Vertex Id="45"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="16.000000" ceil="36.000000">
+      <Neighbors>
+        <Neighbor id="24"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="10"/>
+        <Neighbor id="-1"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="25"/>
+        <Vertex Id="26"/>
+        <Vertex Id="28"/>
+        <Vertex Id="27"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="6" floor="16.000000" ceil="26.000000">
+      <Neighbors>
+        <Neighbor id="-1"/>
+        <Neighbor id="7"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="6"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="9"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="6"/>
+        <Vertex Id="7"/>
+        <Vertex Id="47"/>
+        <Vertex Id="46"/>
+        <Vertex Id="28"/>
+        <Vertex Id="26"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="2.000000" ceil="20.000000">
+      <Neighbors>
+        <Neighbor id="0"/>
+        <Neighbor id="1"/>
+        <Neighbor id="12"/>
+        <Neighbor id="22"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="14"/>
+        <Vertex Id="15"/>
+        <Vertex Id="30"/>
+        <Vertex Id="29"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="4.000000" ceil="20.000000">
+      <Neighbors>
+        <Neighbor id="11"/>
+        <Neighbor id="1"/>
+        <Neighbor id="13"/>
+        <Neighbor id="22"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="15"/>
+        <Vertex Id="17"/>
+        <Vertex Id="32"/>
+        <Vertex Id="30"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="6.000000" ceil="20.000000">
+      <Neighbors>
+        <Neighbor id="12"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="14"/>
+        <Neighbor id="-1"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="17"/>
+        <Vertex Id="18"/>
+        <Vertex Id="33"/>
+        <Vertex Id="32"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="8.000000" ceil="20.000000">
+      <Neighbors>
+        <Neighbor id="13"/>
+        <Neighbor id="19"/>
+        <Neighbor id="15"/>
+        <Neighbor id="20"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="18"/>
+        <Vertex Id="19"/>
+        <Vertex Id="34"/>
+        <Vertex Id="33"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="10.000000" ceil="24.000000">
+      <Neighbors>
+        <Neighbor id="14"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="16"/>
+        <Neighbor id="-1"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="19"/>
+        <Vertex Id="21"/>
+        <Vertex Id="36"/>
+        <Vertex Id="34"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="12.000000" ceil="24.000000">
+      <Neighbors>
+        <Neighbor id="15"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="17"/>
+        <Neighbor id="-1"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="21"/>
+        <Vertex Id="22"/>
+        <Vertex Id="37"/>
+        <Vertex Id="36"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="14.000000" ceil="28.000000">
+      <Neighbors>
+        <Neighbor id="16"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="18"/>
+        <Neighbor id="-1"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="22"/>
+        <Vertex Id="23"/>
+        <Vertex Id="38"/>
+        <Vertex Id="37"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="16.000000" ceil="28.000000">
+      <Neighbors>
+        <Neighbor id="17"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="5"/>
+        <Neighbor id="-1"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="23"/>
+        <Vertex Id="24"/>
+        <Vertex Id="39"/>
+        <Vertex Id="38"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="8.000000" ceil="14.000000">
+      <Neighbors>
+        <Neighbor id="-1"/>
+        <Neighbor id="21"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="14"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="10"/>
+        <Vertex Id="11"/>
+        <Vertex Id="19"/>
+        <Vertex Id="18"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="8.000000" ceil="14.000000">
+      <Neighbors>
+        <Neighbor id="-1"/>
+        <Neighbor id="14"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="2"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="33"/>
+        <Vertex Id="34"/>
+        <Vertex Id="42"/>
+        <Vertex Id="41"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="7" floor="0.000000" ceil="20.000000">
+      <Neighbors>
+        <Neighbor id="-1"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="3"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="19"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="1"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="4"/>
+        <Vertex Id="13"/>
+        <Vertex Id="12"/>
+        <Vertex Id="11"/>
+        <Vertex Id="10"/>
+        <Vertex Id="9"/>
+        <Vertex Id="3"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="5" floor="0.000000" ceil="20.000000">
+      <Neighbors>
+        <Neighbor id="0"/>
+        <Neighbor id="11"/>
+        <Neighbor id="12"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="2"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="29"/>
+        <Vertex Id="30"/>
+        <Vertex Id="32"/>
+        <Vertex Id="40"/>
+        <Vertex Id="49"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="4" floor="16.000000" ceil="36.000000">
+      <Neighbors>
+        <Neighbor id="-1"/>
+        <Neighbor id="7"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="24"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="1"/>
+        <Vertex Id="6"/>
+        <Vertex Id="5"/>
+        <Vertex Id="0"/>
+      </Vertices>
+    </Section>
+    <Section numPoints="6" floor="16.000000" ceil="36.000000">
+      <Neighbors>
+        <Neighbor id="-1"/>
+        <Neighbor id="23"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="9"/>
+        <Neighbor id="-1"/>
+        <Neighbor id="8"/>
+      </Neighbors>
+      <Vertices>
+        <Vertex Id="0"/>
+        <Vertex Id="5"/>
+        <Vertex Id="25"/>
+        <Vertex Id="27"/>
+        <Vertex Id="45"/>
+        <Vertex Id="51"/>
+      </Vertices>
+    </Section>
+  </Sections>
+  <Player x="20" y="90" angle="0" sector="0"/>
+</Level>

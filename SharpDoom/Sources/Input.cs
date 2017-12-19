@@ -14,7 +14,6 @@ namespace SharpDoom
         {
             GetKeyboardInput();
             GetMouseInput();
-
         }
 
         private static void GetKeyboardInput()

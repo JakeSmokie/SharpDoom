@@ -14,13 +14,17 @@ namespace SharpDoom
             pos.y = 0.0f;
 
             viewAngle = 0.0f;
+            sector = 0;
+            height = 0.0f;
         }
 
         public QPoint pos;
         public float viewAngle;
+        public float height;
+        public int sector;
 
         public const float width = 16.0f;
-        public const float speed = 4.0f;
+        public const float speed = 1.0f;
 
         public const float FOV = (float)Math.PI / 3;
     }
