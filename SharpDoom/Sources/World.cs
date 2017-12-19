@@ -55,7 +55,7 @@ namespace SharpDoom
             foreach (XmlNode xmlNode in xmlVertices.ChildNodes)
             {
                 //Console.WriteLine("'{0}' '{1}'", vert.Attributes[0].Value, vert.Attributes[1].Value);
-                vertices.Add(new QPoint(StrToFloat(xmlNode.Attributes[0].Value) * mapScale, StrToFloat(xmlNode.Attributes[1].Value) * mapScale));
+                vertices.Add(new QPoint(StrToFloat(xmlNode.Attributes[0].Value), StrToFloat(xmlNode.Attributes[1].Value)));
             }
         }
         private static void LoadSectors(XmlDocument doc)
@@ -104,7 +104,7 @@ namespace SharpDoom
                         ),
                 viewAngle = StrToFloat(doc.DocumentElement.ChildNodes[2].Attributes[2].Value),
                 sector = sectorIndex,
-                height = sectors[sectorIndex].floorHeight
+                height = sectors[sectorIndex].floorHeight + Player.eyeheight
             };
         }
     }

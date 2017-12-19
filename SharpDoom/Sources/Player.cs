@@ -24,8 +24,10 @@ namespace SharpDoom
         public int sector;
 
         public const float width = 16.0f;
-        public const float speed = 1.0f;
+        public const float speed = 0.2f;
 
         public const float FOV = (float)Math.PI / 3;
+
+        public const float eyeheight = 6.0f;
     }
 }

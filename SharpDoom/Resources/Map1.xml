@@ -456,5 +456,5 @@
       </Vertices>
     </Section>
   </Sections>
-  <Player x="20" y="90" angle="0" sector="0"/>
+  <Player x="2" y="9" angle="0" sector="0"/>
 </Level>

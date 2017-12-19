@@ -15,7 +15,7 @@ namespace SharpDoom
     public static class Automap
     {
         public const float viewLength = 30000.0f;
-        private const float mapScale = 5.0f;
+        private const float mapScale = 25.0f;
 
         public static void Draw()
         {
@@ -26,7 +26,7 @@ namespace SharpDoom
 
         private static void DrawVertices()
         {
-            const float vertexWidth = 8.0f;
+            const float vertexWidth = 4.0f;
             GL.Begin(PrimitiveType.Quads);
 
             foreach (QPoint vertex in World.vertices)
@@ -37,8 +37,8 @@ namespace SharpDoom
 
                 for (int i = 0; i < 4; i++)
                 {
-                    GL.Vertex2(mapScale * vertex.x + a[0] * vertexWidth - Game.window.Width / 2,
-                               mapScale * vertex.y + a[1] * vertexWidth);
+                    GL.Vertex2(mapScale * vertex.x + a[0] * vertexWidth + Game.window.Width / 4,
+                               mapScale * vertex.y + a[1] * vertexWidth + Game.window.Height / 4);
 
                     a[i % 2] *= -1;
                 }
@@ -67,17 +67,17 @@ namespace SharpDoom
             */
             #endregion
             #region drawFOV
-            GL.Color3(Color.Gray);
+            GL.Color3(Color.Gold);
 
-            GL.Vertex2(mapScale * Game.player.pos.x - Game.window.Width / 2,
-                       mapScale * Game.player.pos.y);
-            GL.Vertex2(mapScale * Game.player.pos.x + QMath.Cos(Game.player.viewAngle + Player.FOV / 2) * viewLength - Game.window.Width / 2,
-                       mapScale * Game.player.pos.y + QMath.Sin(Game.player.viewAngle + Player.FOV / 2) * viewLength);
+            GL.Vertex2(mapScale * Game.player.pos.x + Game.window.Width / 4,
+                       mapScale * Game.player.pos.y + Game.window.Height / 4);
+            GL.Vertex2(mapScale * Game.player.pos.x + QMath.Cos(Game.player.viewAngle + Player.FOV / 2) * viewLength + Game.window.Width / 4,
+                       mapScale * Game.player.pos.y + QMath.Sin(Game.player.viewAngle + Player.FOV / 2) * viewLength + Game.window.Height / 4);
 
-            GL.Vertex2(mapScale * Game.player.pos.x - Game.window.Width / 2,
-                       mapScale * Game.player.pos.y);
-            GL.Vertex2(mapScale * Game.player.pos.x + QMath.Cos(Game.player.viewAngle - Player.FOV / 2) * viewLength - Game.window.Width / 2,
-                       mapScale * Game.player.pos.y + QMath.Sin(Game.player.viewAngle - Player.FOV / 2) * viewLength);
+            GL.Vertex2(mapScale * Game.player.pos.x + Game.window.Width / 4,
+                       mapScale * Game.player.pos.y + Game.window.Height / 4);
+            GL.Vertex2(mapScale * Game.player.pos.x + QMath.Cos(Game.player.viewAngle - Player.FOV / 2) * viewLength + Game.window.Width / 4,
+                       mapScale * Game.player.pos.y + QMath.Sin(Game.player.viewAngle - Player.FOV / 2) * viewLength + Game.window.Height / 4);
 
             GL.End();
             #endregion
@@ -89,8 +89,8 @@ namespace SharpDoom
 
             for (int i = 0; i < 4; i++)
             {
-                GL.Vertex2(mapScale * Game.player.pos.x + a[0] * Player.width - Game.window.Width / 2,
-                           mapScale * Game.player.pos.y + a[1] * Player.width);
+                GL.Vertex2(mapScale * Game.player.pos.x + a[0] * Player.width + Game.window.Width / 4,
+                           mapScale * Game.player.pos.y + a[1] * Player.width + Game.window.Height / 4);
 
                 a[i % 2] *= -1;
             }
@@ -129,8 +129,8 @@ namespace SharpDoom
                         //continue;
                     }
 
-                    GL.Vertex2(mapScale * a.x - Game.window.Width / 2, mapScale * a.y);
-                    GL.Vertex2(mapScale * b.x - Game.window.Width / 2, mapScale * b.y);
+                    GL.Vertex2(mapScale * a.x + Game.window.Width / 4, mapScale * a.y + Game.window.Height / 4);
+                    GL.Vertex2(mapScale * b.x + Game.window.Width / 4, mapScale * b.y + Game.window.Height / 4);
                 }
             }
 

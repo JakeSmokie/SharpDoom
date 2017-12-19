@@ -18,7 +18,7 @@ namespace SharpDoom
 
     public struct SectorRendering
     {
-        public SectorRendering(int sectorNumber, float minX, float maxX)
+        public SectorRendering(int sectorNumber, int minX, int maxX)
         {
             sectorNo = sectorNumber;
             sx1 = minX;
@@ -26,6 +26,6 @@ namespace SharpDoom
         }
 
         public int sectorNo;
-        public float sx1, sx2;
+        public int sx1, sx2;
     };
 }
